@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 const OrderSummery = ({setActive,details,setDetails}) => {
     const bigDate= new Date();
-    const date=bigDate.getDate()+"-"+bigDate.getMonth()+"-"+bigDate.getFullYear()
+    const month = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+    console.log(month[bigDate.getMonth()])
+    const date=bigDate.getDate()+"-"+month[bigDate.getMonth()]+"-"+bigDate.getFullYear()
     const floatId=Math.random()*100000000
     const id=Math.floor(floatId)
 
