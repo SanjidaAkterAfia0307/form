@@ -14,7 +14,7 @@ const OrderSummery = ({setActive,details,setDetails}) => {
     }
     return (
 
-        <form onSubmit={handleSubmit} className='px-6 mt-8'>
+        <form onSubmit={handleSubmit} className='md:px-6 px-2 mt-8'>
             <div className=''>
                 <label htmlFor="proName" className='block font-semibold'>Product Name</label>
                 <input type="text" onChange={(e)=>setDetails({...details,[e.target.name]:e.target.value})} name="proName" id="" className='border border-gray-400 rounded-lg py-2 w-full my-2 focus:border-gray-900 placeholder:text-gray-500 px-2' placeholder='Type here' required />
@@ -32,7 +32,7 @@ const OrderSummery = ({setActive,details,setDetails}) => {
                 <input type="text" defaultValue={date} disabled  name="date" id="" className='border border-gray-400 rounded-lg py-2 w-full my-2 focus:border-gray-900 placeholder:text-gray-500 px-2' placeholder='Type here' required />
             </div>
             <div className='flex justify-end my-2' >
-                <button  className='bg-sky-500 px-4 py-2 rounded-md w-1/5 text-center text-white'>Next</button>
+                <button  className='bg-sky-500 px-4 py-2 rounded-md  text-center text-white'>Next</button>
             </div>
         </form>
 
